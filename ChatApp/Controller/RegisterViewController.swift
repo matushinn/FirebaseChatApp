@@ -9,7 +9,7 @@ import UIKit
 import Firebase
 import FirebaseAuth
 
-class RegisterViewController: UIViewController ,UIImagePickerControllerDelegate,UINavigationControllerDelegate,SendProfileOKDelegate{
+class RegisterViewController: UIViewController ,UIImagePickerControllerDelegate,UINavigationControllerDelegate,SendProfileOKDelegate,UITextFieldDelegate{
     
     
     
@@ -30,9 +30,17 @@ class RegisterViewController: UIViewController ,UIImagePickerControllerDelegate,
         checkModel.showCheckPermission()
         sendToDBModel.sendProfileOKDelegate = self
         
+        emailTextField.delegate = self
+        passwordTextField.delegate = self
+        
         
     }
     
+    //viewをタッチしたらキーボードを閉じる
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        emailTextField.resignFirstResponder()
+        passwordTextField.resignFirstResponder()
+    }
     func SendProfileOKDelegate(url: String) {
         urlString = url
         //urlが返ってきているかどうか？
