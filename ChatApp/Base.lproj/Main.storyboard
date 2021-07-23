@@ -81,7 +81,7 @@
                                     <action selector="emailTextField:" destination="FeF-eg-sB9" eventType="editingDidEnd" id="hIW-Bw-Ofk"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="パスワード(6文字以上)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j5u-7v-Zz1">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="パスワード" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j5u-7v-Zz1">
                                 <rect key="frame" x="67" y="467" width="279" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -218,12 +218,6 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FcM-A8-O8r">
-                                <rect key="frame" x="20" y="760" width="279" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q6O-ko-O0M">
                                 <rect key="frame" x="330" y="730" width="64" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -231,13 +225,23 @@
                                 <state key="normal" image="send">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="send:" destination="TCi-Zq-hOw" eventType="touchUpInside" id="xqq-Mm-oY9"/>
+                                </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FcM-A8-O8r">
+                                <rect key="frame" x="20" y="745" width="279" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Alf-OX-u7f"/>
                         <color key="backgroundColor" red="0.48486027100000001" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="sB3-Yh-LMA"/>
                     <connections>
+                        <outlet property="messageTextField" destination="FcM-A8-O8r" id="p3R-ml-BA5"/>
                         <outlet property="tableView" destination="FGJ-As-Rd3" id="QKK-zk-gPh"/>
                     </connections>
                 </viewController>

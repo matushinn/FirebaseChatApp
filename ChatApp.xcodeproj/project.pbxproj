@@ -22,6 +22,9 @@
 		370DAB0B26AAE02100D89A49 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370DAB0A26AAE02100D89A49 /* TabBarController.swift */; };
 		370DAB0D26AAE05700D89A49 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370DAB0C26AAE05700D89A49 /* ChatViewController.swift */; };
 		370DAB1126AAE69400D89A49 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 370DAB1026AAE69400D89A49 /* GoogleService-Info.plist */; };
+		370DAB1326AAED9500D89A49 /* MessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370DAB1226AAED9500D89A49 /* MessageModel.swift */; };
+		370DAB1626AAF45400D89A49 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370DAB1426AAF45400D89A49 /* MessageCell.swift */; };
+		370DAB1726AAF45400D89A49 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 370DAB1526AAF45400D89A49 /* MessageCell.xib */; };
 		C327886B3395FCBE8C06743E /* Pods_ChatApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B021095B3B2F904D047C3547 /* Pods_ChatApp.framework */; };
 		EBD885B0AB350729DC7EFB4B /* Pods_ChatApp_ChatAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FF39D2668C3B71CED694346 /* Pods_ChatApp_ChatAppUITests.framework */; };
 /* End PBXBuildFile section */
@@ -66,6 +69,9 @@
 		370DAB0A26AAE02100D89A49 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		370DAB0C26AAE05700D89A49 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		370DAB1026AAE69400D89A49 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		370DAB1226AAED9500D89A49 /* MessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageModel.swift; sourceTree = "<group>"; };
+		370DAB1426AAF45400D89A49 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		370DAB1526AAF45400D89A49 /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
 		611E7D9DA55700F8D6D10001 /* Pods-ChatAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatAppTests.release.xcconfig"; path = "Target Support Files/Pods-ChatAppTests/Pods-ChatAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		6315561F95824BF1FDE5663C /* Pods-ChatApp-ChatAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatApp-ChatAppUITests.release.xcconfig"; path = "Target Support Files/Pods-ChatApp-ChatAppUITests/Pods-ChatApp-ChatAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		69436B3FBC152AE3D0BA9045 /* Pods-ChatApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatApp.debug.xcconfig"; path = "Target Support Files/Pods-ChatApp/Pods-ChatApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -137,6 +143,8 @@
 				370DAADB26AA7D3300D89A49 /* LaunchScreen.storyboard */,
 				370DAADE26AA7D3300D89A49 /* Info.plist */,
 				370DAB1026AAE69400D89A49 /* GoogleService-Info.plist */,
+				370DAB1426AAF45400D89A49 /* MessageCell.swift */,
+				370DAB1526AAF45400D89A49 /* MessageCell.xib */,
 			);
 			path = ChatApp;
 			sourceTree = "<group>";
@@ -175,6 +183,7 @@
 			children = (
 				370DAB0626AA82C500D89A49 /* CheckPermition.swift */,
 				370DAB0826AAD68A00D89A49 /* SendToDBModel.swift */,
+				370DAB1226AAED9500D89A49 /* MessageModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -310,6 +319,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				370DAB1726AAF45400D89A49 /* MessageCell.xib in Resources */,
 				370DAADD26AA7D3300D89A49 /* LaunchScreen.storyboard in Resources */,
 				370DAB1126AAE69400D89A49 /* GoogleService-Info.plist in Resources */,
 				370DAADA26AA7D3300D89A49 /* Assets.xcassets in Resources */,
@@ -442,12 +452,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				370DAAD526AA7D2F00D89A49 /* ViewController.swift in Sources */,
+				370DAB1626AAF45400D89A49 /* MessageCell.swift in Sources */,
 				370DAAD126AA7D2F00D89A49 /* AppDelegate.swift in Sources */,
 				370DAB0D26AAE05700D89A49 /* ChatViewController.swift in Sources */,
 				370DAB0726AA82C500D89A49 /* CheckPermition.swift in Sources */,
 				370DAAD326AA7D2F00D89A49 /* SceneDelegate.swift in Sources */,
 				370DAB0B26AAE02100D89A49 /* TabBarController.swift in Sources */,
 				370DAB0926AAD68A00D89A49 /* SendToDBModel.swift in Sources */,
+				370DAB1326AAED9500D89A49 /* MessageModel.swift in Sources */,
 				370DAB0526AA82A500D89A49 /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
