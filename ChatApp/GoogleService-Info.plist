@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>215703585781-sn52jf44lrmsb4f8q6g3k55eqr35li8i.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.215703585781-sn52jf44lrmsb4f8q6g3k55eqr35li8i</string>
+	<key>API_KEY</key>
+	<string>AIzaSyABnKQKePIvK6415O5tL8lcNkvcBII45-0</string>
+	<key>GCM_SENDER_ID</key>
+	<string>215703585781</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>net.shotaroooe.ChatApp</string>
+	<key>PROJECT_ID</key>
+	<string>swift6chatapp-a0765</string>
+	<key>STORAGE_BUCKET</key>
+	<string>swift6chatapp-a0765.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:215703585781:ios:68d364192bd70bab8716bc</string>
+</dict>
+</plist>
