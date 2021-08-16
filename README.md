@@ -18,3 +18,6 @@
   pod 'Firebase/Storage'
   pod 'SDWebImage', '~> 5.0'
 ```
+
+## 概要
+![Animated GIF-downsized (4)](https://user-images.githubusercontent.com/44314610/129534205-f220650a-bcb2-4403-aec2-60c7bfd09b70.gif)
